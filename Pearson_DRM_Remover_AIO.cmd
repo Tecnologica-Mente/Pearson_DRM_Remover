@@ -26,7 +26,7 @@ cls
 color 07
 title  Pearson DRM Remover AIO v1.0.0
 mode 100, 30
-set "hsdrmrtemp=%SystemRoot%\Temp\__PDRMR"
+set "pdrmrtemp=%SystemRoot%\Temp\__PDRMR"
 if exist "%pdrmrtemp%\.*" rmdir /s /q "%pdrmrtemp%\" %nul%
 
 echo:
