@@ -24,7 +24,10 @@ class Pearson:
         self.password = password
 
     def login(self):
-        login_url = "https://api.pearson.com/v1/piapi/login/webcredentials"
+        # Old login URL
+        # login_url = "https://api.pearson.com/v1/piapi/login/webcredentials"
+        # New login URL - Thanks to randstrom
+        login_url = "https://login.pearson.com/v1/piapi/login/webcredentials"
         headers = {
             "User-Agent": f"mobile_app|{{\"browser\":\"Android Device\",\"device\":\"Phone\",\"display\":\"Custom\",\"id\":\"{self.device_id}\",\"os\":\"Android\"}}",
             "Host": "login.pearson.com"
